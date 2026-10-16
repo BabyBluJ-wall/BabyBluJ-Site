@@ -1,0 +1,37 @@
+[build]
+  command = "vite build"
+  publish = "dist/client"
+[dev]
+  command = "npm run dev"
+  targetPort = 3000
+  port = 8888
+
+# Keep links from the previous Softr site working.
+[[redirects]]
+  from = "/about-me"
+  to = "/about"
+  status = 301
+[[redirects]]
+  from = "/f-a-q-s-"
+  to = "/faq"
+  status = 301
+[[redirects]]
+  from = "/affiliate"
+  to = "/affiliates"
+  status = 301
+[[redirects]]
+  from = "/amazon-affiliate"
+  to = "/amazon-help"
+  status = 301
+[[redirects]]
+  from = "/minecraft-realm"
+  to = "/minecraft"
+  status = 301
+[[redirects]]
+  from = "/coming-soon"
+  to = "/discord-work"
+  status = 301
+[[redirects]]
+  from = "/home-binger"
+  to = "/projects/home-binger"
+  status = 301
